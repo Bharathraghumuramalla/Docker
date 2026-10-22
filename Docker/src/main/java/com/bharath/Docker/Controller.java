@@ -21,7 +21,7 @@ public class Controller
     public String addStudent(@RequestBody Student s)
     {
         studentRepository.save(s);
-        return "Added successfully";
+        return "Added Student successfully";
     }
 
     @DeleteMapping("/deleteStudent/{id}")
