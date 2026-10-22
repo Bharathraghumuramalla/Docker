@@ -9,6 +9,7 @@ COPY Docker/src ./src
 RUN mvn clean package -DskipTests
 
 # Stage 2: Run the application
+
 FROM eclipse-temurin:21-jre
 
 WORKDIR /app
